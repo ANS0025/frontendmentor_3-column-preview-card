@@ -1,0 +1,190 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* カード本体 */
+main{
+    width: 920px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lexend Deca', sans-serif;
+}
+/* 各種カード共通 */
+section{
+    width: 307px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
+div{
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    color: #ffff;
+}
+img{
+    width: 64px;
+    height: auto;
+    margin-top: 48px;
+}
+h1{
+    margin-top: 35px;
+    font-size: 40px;
+    font-family: 'Big Shoulders Display';
+}
+p{
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 25px;
+}
+button{
+    width: 145px;
+    height: 48px;
+    margin-top: 83px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ffff;
+}
+button:hover{
+    cursor: pointer;
+    background-color: inherit;
+    border: 2px solid #ffff;
+    color: #ffff;
+}
+/* セダン */
+#sedans{
+    background: #E28625;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+#sedans button{
+    color: #E28625;
+}
+#sedans button:hover{
+    color: #ffff;
+}
+/* SUV */
+#suvs{
+    background: #006971;
+}
+#suvs button{
+    color: #006971;
+}
+#suvs button:hover{
+    color: #ffff;
+}
+/* ラグジュアリー */
+#luxury{
+    background: #004140;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+#luxury button{
+    color: #004140;
+}
+#luxury button:hover{
+    color: #ffff;
+}
+
+
+/* モバイル版 
+----------------------------------------------------------*/
+@media (max-width: 767px){
+    body{
+        display: flex;
+        justify-content: flex-start;
+    }
+    /* カード本体 */
+    main{
+        width: 327px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    /* 各種カード共通 */
+    section{
+        width: 327px;
+        height: 442px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+    div{
+        width: 73%;
+        display: flex;
+        flex-direction: column;
+        color: #ffff;
+    }
+    img{
+        width: 64px;
+        height: auto;
+        margin-top: 48px;
+    }
+    h1{
+        margin-top: 35px;
+        font-size: 40px;
+        font-family: 'Big Shoulders Display';
+    }
+    p{
+        margin-top: 25px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    button{
+        width: 145px;
+        height: 48px;
+        margin-top: 25px;
+        border-radius: 25px;
+        border: none;
+        background-color: #ffff;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: inherit;
+        border: 2px solid #ffff;
+        color: #ffff;
+    }
+    /* セダン */
+    #sedans{
+        background: #E28625;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+    #sedans button{
+        color: #E28625;
+    }
+    #sedans button:hover{
+        color: #ffff;
+    }
+    /* SUV */
+    #suvs{
+        background: #006971;
+    }
+    #suvs button{
+        color: #006971;
+    }
+    #suvs button:hover{
+        color: #ffff;
+    }
+    /* ラグジュアリー */
+    #luxury{
+        background: #004140;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    #luxury button{
+        color: #004140;
+    }
+    #luxury button:hover{
+        color: #ffff;
+    }
+}
