@@ -32,8 +32,9 @@ img{
     height: auto;
     margin-top: 48px;
 }
-h1{
+h2{
     margin-top: 35px;
+    margin-bottom: 0;
     font-size: 40px;
     font-family: 'Big Shoulders Display';
 }
@@ -128,8 +129,9 @@ button:hover{
         height: auto;
         margin-top: 48px;
     }
-    h1{
+    h2{
         margin-top: 35px;
+        margin-bottom: 0;
         font-size: 40px;
         font-family: 'Big Shoulders Display';
     }
